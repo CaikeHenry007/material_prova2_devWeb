@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador</title>
+  <script>
+    let contador = 0;
+
+    function atualizarContador() {
+      document.getElementById("valor").innerText = contador;
+    }
+
+    function incrementar() {
+      contador++;
+      atualizarContador();
+    }
+
+    function decrementar() {
+      contador--;
+      atualizarContador();
+    }
+  </script>
+</head>
+<body>
+  <h2>Contador</h2>
+  <p>Valor atual: <span id="valor">0</span></p>
+  <button onclick="incrementar()">Incrementar</button>
+  <button onclick="decrementar()">Decrementar</button>
+</body>
+</html>
